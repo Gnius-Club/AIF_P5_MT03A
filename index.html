@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM03A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a conectar e inicializar la Smart A.I. Lens con su robot Nezha, comprendan cómo activar su modo de reconocimiento de tarjetas de color, entiendan conceptualmente que la lente utiliza IA pre-entrenada para identificar colores, y diseñen un proyecto donde su robot reaccionará a 2-3 colores específicos, obteniendo el plan correspondiente.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Introducir el componente y clarificar objetivos.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprender sobre IA pre-entrenada y comandos de la A.I. Lens.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Diseño de la idea del robot y obtención del plan.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Compartición de planes y retroalimentación.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un plan (GCS) seleccionado por el equipo, de entre las 4 opciones generadas individualmente, listo para ser implementado en la Sesión 3B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes.</li>
+                                        <li>Smart A.I. Lens para demostración.</li>
+                                        <li>Tarjetas de colores (rojo, verde, amarillo, azul).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos y los tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Ten una Smart A.I. Lens a la mano para la demostración y, opcionalmente, una demo funcional conectada a un Micro:bit para mostrar el reconocimiento de color.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, súper constructores! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el componente clave (Smart A.I. Lens) y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización - El Componente "Mágico" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Anuncia el inicio de la actividad y muestra físicamente la A.I. Lens.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. Miren esto. (Muestra la A.I. Lens). Esta es la Smart A.I. Lens. Es mucho más que una simple cámara. Dentro tiene un pequeño chip de IA que le permite entender lo que ve. Hoy empezaremos por enseñarle a nuestro robot a reconocer colores usando esta lente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ejemplificación ⏰ 2 minutos</h3>
+                            <p>Demuestra brevemente cómo se conecta y, si lo preparaste, muestra la demo opcional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Se conecta así de fácil a nuestra placa Nezha Pro, en este puerto especial llamado I2C. [Si tienes la demo, muéstrala ahora] Miren, cuando le muestro esta tarjeta roja, el Micro:bit sabe que es 'ROJO'. ¡La lente le está pasando la información! Es importante saber que, como otros sensores, debemos 'despertarla' o inicializarla en nuestro programa para que funcione.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a conectar esta lente mágica a nuestros robots y a explorar cómo puede 'ver' tarjetas de diferentes colores. Al final de esta sesión, podrán decir: <strong>'Yo sé cómo funciona la A.I. Lens para ver colores, y tengo un plan para que mi robot Nezha reaccione a diferentes colores que la lente detecte.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan con Xolo sobre la IA pre-entrenada y los comandos de la A.I. Lens.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Exploración con Xolo ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5 y 6) Anuncia la actividad y guía a los alumnos para que pidan la explicación a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para entender cómo funciona esta magia! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>'Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre la Smart A.I. Lens, cómo reconoce colores y qué es un modelo pre-entrenado.'</strong> Xolo les contará un secreto muy importante sobre cómo la lente ya viene 'enseñada' de fábrica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Los Comandos del Plan ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Indica a los alumnos que presten atención a los comandos que Xolo les mostrará para crear su plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ahora que saben el concepto de 'pre-entrenado', necesitan los comandos para darle órdenes a la lente. Xolo les va a mostrar los comandos exactos que usaremos en nuestro plan. Presten atención.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// Para "despertar" la lente al inicio
+Initialize AI-Lens
+
+// Para decirle que busque colores
+Switch function as Color
+
+// Para preguntarle qué color está viendo
+leer_lente_IA_color()</pre>
+                                <p class="dialogue assistant">Con estos tres comandos, ya podemos crear un robot que reacciona a los colores de su entorno.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de diseño en equipo de un concepto y planificación individual para un robot que reacciona a colores.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño del Concepto General (Equipo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Anuncia la actividad y lanza el desafío de diseño conceptual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegamos al <strong>Brain Spark</strong>! Reúnanse en sus equipos. Su primera misión es decidir el TEMA o CONCEPTO de su robot. ¿Será un vehículo de seguridad que reacciona a señales de colores? ¿Un animalito que busca comida de un color? Discutan y pónganse de acuerdo en un concepto general.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Plan Individual ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los alumnos para que generen ideas individuales y obtengan su propio plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que tienen su concepto, cada uno de ustedes, de forma INDIVIDUAL, va a pensar en una reacción específica y se la va a pedir a Xolo. Por ejemplo: <strong>'Mi idea para nuestro vehículo de seguridad es que avance con VERDE y retroceda con ROJO.'</strong> Cada uno describa su propia idea a Xolo para recibir un plan personal. ¡Así cada equipo tendrá varias opciones!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN de ejemplo para un alumno
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Color
+    mostrar texto "Veo Colores!"
+
+POR SIEMPRE:
+    fijar variable "color_visto" a leer_lente_IA_color()
+
+    SI (variable "color_visto" == "VERDE"):
+        nezha_motor_M1_velocidad(50)
+        nezha_motor_M2_velocidad(50)
+    SINO SI (variable "color_visto" == "ROJO"):
+        nezha_motor_M1_velocidad(-50)
+        nezha_motor_M2_velocidad(-50)
+    FIN SI</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Selección del Plan Maestro (Equipo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Indica a los equipos que seleccionen el plan que implementarán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, ahora cada equipo tiene hasta 4 planes diferentes! Compartan sus planes y elijan UNO, el que más les guste o les parezca más interesante. Ese será el plan que usarán para construir y programar en la próxima clase. ¡Decidan su plan maestro!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir las ideas y los planes seleccionados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Llegamos a la última actividad, el <strong>Gnius STORM</strong>! Antes de compartir, piensen un momento: ¿Por qué su equipo eligió ese plan en particular? ¿Qué lo hizo especial?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Grupo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Indica a los equipos que compartan la idea de su robot y el plan elegido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, a compartir! Un portavoz de cada equipo nos contará la idea de su robot y nos dirá un ejemplo de un color que usarán y qué hará el robot cuando lo vea, según el plan que eligieron. ¡Escuchemos esas ideas creativas!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y conecta con la siguiente clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelentes ideas para sus robots videntes! Ya tienen su plan maestro. En la próxima sesión, conectarán la A.I. Lens, adaptarán sus robots, y programarán estas reacciones a los colores. ¡Veremos qué tan buenos son sus ro​​bots para distinguir el rojo del verde!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
