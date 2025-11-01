@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 5A 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 9 - 5to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -69,26 +69,27 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Objetivos de aprendizaje PLAYBOOK:</strong>
-                                    <ul>
-                                        <li>Conectar e inicializar la Smart A.I. Lens al robot Nezha.</li>
-                                        <li>Activar el modo de reconocimiento de tarjetas de color.</li>
-                                        <li>Utilizar el comando GCS leer_lente_IA_color() para que el robot "vea".</li>
-                                        <li>Comprender el concepto de IA pre-entrenada y cómo la lente identifica colores.</li>
-                                    </ul>
-                                    <strong>Objetivo General de la Sesión:</strong> Que los estudiantes integren la Lente de IA al robot, programando una reacción inteligente a diferentes colores mediante el uso de comandos GCS de la lente.
+                                    <strong>Objetivos de aprendizaje:</strong>
+                                    Al final de la sesión, los estudiantes podrán:
+<ul>
+<li>Conectar e inicializar la A.I. Lens.</li>
+<li>Activar el modo de reconocimiento de color.</li>
+<li>Utilizar la función planet_x.get_color_card().</li>
+<li>Comprender el concepto de IA pre-entrenada.</li>
+</ul>
+                                    <strong>Objetivo General de la Sesión:</strong> Que los estudiantes integren la Lente de IA al robot y programen en Python una reacción a colores.
 
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
-                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Introducir el componente y clarificar objetivos.</li>
-                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprender sobre IA pre-entrenada y comandos de la A.I. Lens.</li>
-                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Diseño de la idea del robot y obtención del plan.</li>
-                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Compartición de planes y retroalimentación.</li>
+                                        <li><strong>Actividad 1:</strong> Saludo Interactivo con IA: Activación y personalización de la IA.</li>
+                                        <li><strong>Actividad 2:</strong> "I Can Statement" + Ejemplificación: Introducir el componente y clarificar objetivos.</li>
+                                        <li><strong>Actividad 3:</strong> AI GYM: Aprender sobre IA pre-entrenada y comandos de la A.I. Lens.</li>
+                                        <li><strong>Actividad 4:</strong> Brain Spark: Diseño de la idea del robot y obtención del plan.</li>
+                                        <li><strong>Actividad 5:</strong> Gnius STORM: Compartición de planes y retroalimentación.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un plan (GCS) seleccionado por el equipo, de entre las 4 opciones generadas individualmente, listo para ser implementado en la Sesión 3B.</li>
+                                        <li>Un plan (Python) seleccionado por el equipo, de entre las 4 opciones generadas individualmente, listo para ser implementado en la siguiente sesión.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -98,7 +99,7 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
                                         <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>Presentación (12 diapositivas).</li>
                                         <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes.</li>
                                         <li>Smart A.I. Lens para demostración.</li>
                                         <li>Tarjetas de colores (rojo, verde, amarillo, azul).</li>
@@ -166,7 +167,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. Miren esto. (Muestra la A.I. Lens). Esta es la Smart A.I. Lens. Es mucho más que una simple cámara. Dentro tiene un pequeño chip de IA que le permite entender lo que ve. <strong>Hoy nos enfocaremos primero en la construcción: cómo montar esta lente en el chasis del robot de manera estable y segura para que pueda "ver" correctamente.</strong></p>
+                                <p class="dialogue assistant">Muy bien, iniciamos la actividad <strong>'I Can Statement + Ejemplificación'</strong>. Miren esto. (Muestra la A.I. Lens). Esta es la <strong>Smart A.I. Lens</strong>. Es mucho más que una simple cámara. Dentro tiene un pequeño chip de <strong>IA</strong> que le permite entender lo que ve. <strong>Hoy nos enfocaremos primero en la construcción: cómo montar esta lente en el chasis del robot de manera estable y segura para que pueda "ver" correctamente.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -178,7 +179,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Se conecta así de fácil a nuestra placa Nezha Pro, en este puerto especial llamado I2C. [Si tienes la demo, muéstrala ahora] Miren, cuando le muestro esta tarjeta roja, el Micro:bit sabe que es 'ROJO'. ¡La lente le está pasando la información! Es importante saber que, como otros sensores, debemos 'despertarla' o inicializarla en nuestro programa para que funcione.</p>
+                                <p class="dialogue assistant">Se conecta así de fácil a nuestra <strong>placa Nezha Pro</strong>, en este <strong>puerto especial llamado I2C</strong>. [Si tienes la demo, muéstrala ahora] Miren, cuando le muestro esta tarjeta roja, el Micro:bit sabe que es <strong>'ROJO'</strong>. ¡La lente le está pasando la información! Es importante saber que, como otros sensores, debemos 'despertarla' o <strong>inicializarla</strong> en nuestro programa para que funcione.</p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +210,8 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para entender cómo funciona esta magia! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes a conectar e inicializar la Smart A.I. Lens, a usar el comando "leer_lente_IA_color()", sobre el modo de Reconocimiento de Tarjetas de Color, y qué significa que la Lente IA esté pre-entrenada.'</strong> Xolo les contará un secreto muy importante sobre cómo la lente ya viene 'enseñada' de fábrica.</p>
+                                <p class="dialogue assistant">¡Perfecto, ahora vamos al <strong>A.I. GYM</strong> para entender cómo funciona esta magia! Pidanle a Xolo la siguiente información, escribiendo en el chat: <strong>Mi perfil es [escribe aquí tu perfil] y quiero entender cómo una inteligencia artificial puede ‘ver’. ¿Qué tan confiable es cuando la luz cambia o el objeto está en otro ángulo?
+Después, Xolo, ayúdame a conectar e inicializar la Smart A.I. Lens de mi robot Nezha con los comandos de Python planet_x.init_module() y planet_x.get_color_card(). Quiero aprender a activar el modo de reconocimiento de tarjetas de color y comprobar cómo el robot reacciona a los colores que la lente identifica.</strong> Xolo les contará un secreto muy importante sobre cómo la lente ya viene 'enseñada' de fábrica.</p>
                             </div>
                         </div>
                     </div>
@@ -223,14 +225,11 @@
                             <div class="collapsible-content">
                                 <p class="dialogue assistant">¡Excelente! Ahora que saben el concepto de 'pre-entrenado', necesitan los comandos para darle órdenes a la lente. Xolo les va a mostrar los comandos exactos que usaremos en nuestro plan. Presten atención.</p>
                                 <pre class="dialogue assistant" style="color: #d32f2f;">// Para "despertar" la lente al inicio
-Initialize AI-Lens
-
-// Para decirle que busque colores
-Switch function as Color
+<strong>planet_x.init_module()</strong>
 
 // Para preguntarle qué color está viendo
-leer_lente_IA_color()</pre>
-                                <p class="dialogue assistant">Con estos tres comandos, ya podemos crear un robot que reacciona a los colores de su entorno.</p>
+<strong>planet_x.get_color_card()</strong></pre>
+                                <p class="dialogue assistant">Con estos comandos, ya podemos crear un robot que reacciona a los colores de su entorno.</p>
                             </div>
                         </div>
                     </div>
@@ -262,22 +261,20 @@ leer_lente_IA_color()</pre>
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant">Ahora que tienen su concepto, cada uno de ustedes, de forma INDIVIDUAL, va a pensar en una reacción específica y se la va a pedir a Xolo. Por ejemplo: <strong>'Mi idea para nuestro vehículo de seguridad es que avance con VERDE y retroceda con ROJO.'</strong> Cada uno describa su propia idea a Xolo para recibir un plan personal. ¡Así cada equipo tendrá varias opciones!</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN de ejemplo para un alumno
-AL INICIO:
-    Initialize AI-Lens
-    Switch function as Color
-    mostrar texto "Veo Colores!"
+                                <pre class="dialogue assistant" style="color: #d32f2f;"># PLAN de ejemplo para un alumno
+# Al iniciar:
+planet_x.init_module()
 
-POR SIEMPRE:
-    fijar variable "color_visto" a leer_lente_IA_color()
+# Por siempre:
+while True:
+    color_visto = planet_x.get_color_card()
 
-    SI (variable "color_visto" == "VERDE"):
-        nezha_motor_M1_velocidad(50)
-        nezha_motor_M2_velocidad(50)
-    SINO SI (variable "color_visto" == "ROJO"):
-        nezha_motor_M1_velocidad(-50)
-        nezha_motor_M2_velocidad(-50)
-    FIN SI</pre>
+    if color_visto == "VERDE":
+        nezha.set_motor_speed("M1", 50)
+        nezha.set_motor_speed("M2", 50)
+    elif color_visto == "ROJO":
+        nezha.set_motor_speed("M1", -50)
+        nezha.set_motor_speed("M2", -50)</pre>
                             </div>
                         </div>
                     </div>
@@ -335,7 +332,7 @@ POR SIEMPRE:
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelentes ideas para sus robots videntes! Ya tienen su plan maestro. En la próxima sesión, **la tarea principal será construir y asegurar la Lente de IA al chasis del robot** siguiendo su diseño, y luego programarán estas reacciones a los colores. ¡Veremos qué tan buenos son sus ro​​bots para distinguir el rojo del verde!</p>
+                                <p class="dialogue assistant">¡Excelentes ideas para sus robots videntes! Ya tienen su plan maestro. En la próxima sesión, <strong>la tarea principal será construir y asegurar la Lente de IA al chasis del robot</strong> siguiendo su diseño, y luego programarán estas reacciones a los colores. ¡Veremos qué tan buenos son sus ro​​bots para distinguir el rojo del verde!</p>
                             </div>
                         </div>
                     </div>
