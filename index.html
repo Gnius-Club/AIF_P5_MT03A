@@ -6,7 +6,7 @@
     <title>Playbook-P5-TM5</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,18 +17,28 @@
                 <button id="global-start-stop">Start</button>
                 <button id="global-reset">Reset</button>
             </div>
+            <!-- Estructura del Theme Toggle agregada para coincidir con TM11 -->
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
     </header>
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
             <ul>
-                <li><a href="#activity-0">📝 De un Vistazo</a></li>
-                <li><a href="#activity-1">1. Intro</a></li>
-                <li><a href="#activity-2">2. A.I. Gym</a></li>
-                <li><a href="#activity-3">3. Brain Spark</a></li>
-                <li><a href="#activity-4">4. Compartir</a></li>
-                <li><a href="#activity-5">5. Evidencias</a></li>
+                <!-- Formato de lista ajustado para coincidir con el CSS y TM11 -->
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
         </aside>
         <main class="content">
@@ -49,8 +59,12 @@
                 <div class="command-section xolo-prompt">
                     <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
                     <div class="prompt-box">
+                        <!-- Estructura de botón de copiado agregada -->
                         <div class="prompt-header">
                             <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
                         </div>
                         <pre id="main-prompt">Explícame qué es un servomotor y cómo se diferencia de un motor continuo. Enséñame cómo un servo controla ángulos y por qué un pequeño error puede causar fallos en robots reales. Luego ayúdame a diseñar un mecanismo simple de barrera o señalador con 1 servo: qué debe hacer, qué ángulos usar (0, 90, 180) y cómo asegurar que el movimiento sea seguro.</pre>
                     </div>
@@ -249,7 +263,8 @@
                 </div>
                 
                 <div class="optional-script">
-                    <button class="collapsible-button" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">📖 Ver guion detallado (opcional)</button>
+                    <!-- Javascript inline eliminado para usar el script.js externo -->
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Hola a todos! Ahora vamos a descubrir cómo darle 'músculos' inteligentes a nuestros proyectos. Abran su chat con XOLO y denle un gran saludo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre los servomotores y cómo funcionan como actuadores. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle cómo es que un servo sabe exactamente en qué ángulo detenerse y por qué eso es tan importante para que un robot no se rompa. ¡Aprovechen para despejar todas sus dudas con su guía digital!</p>
                     </div>
@@ -311,7 +326,8 @@
                     </div>
                 </div>
                 <div class="optional-script">
-                    <button class="collapsible-button" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">📖 Ver guion detallado (opcional)</button>
+                    <!-- Javascript inline eliminado para usar el script.js externo -->
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
                     <div class="collapsible-content">
                         <p class="dialogue assistant">¡Es hora de crear, genios! Vamos a pasar de la teoría a la acción. El flujo de hoy es emocionante: primero ideen con XOLO su proyecto, definan ese 'VIBE' de robot guardián, y obtengan su GCS. Por ejemplo, podrían diseñar una barrera que se levante majestuosamente cuando alguien se acerque. Una vez que tengan el código, pásenlo a bloques en MakeCode y pruebenlo. No olviden las preguntas de experimentación: ¿qué pasa si el ángulo no es el correcto? Cuando su simulador funcione, les entregaré el hardware para que lo vean cobrar vida. Recuerden manipular los servos con delicadeza. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su código en un instante.</p>
                     </div>
@@ -431,4 +447,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html></html>
+</html>
